@@ -1,9 +1,18 @@
-### Well hello there!
+learning git command
 
-This repository is meant to provide an example for *forking* a repository on GitHub.
+first using git remote add NEW url to add a remote repo to your machine. its name is NEW.
+you can rename it to other later by using command:
+git remote rename NEW origin
 
-Creating a *fork* is producing a personal copy of someone else's project. Forks act as a sort of bridge between the original repository and your personal copy. You can submit *Pull Requests* to help make other people's projects better by offering your changes up to the original project. Forking is at the core of social coding at GitHub.
+This will rename NEW to 'origin'
 
-After forking this repository, you can make some changes to the project, and submit [a Pull Request](https://github.com/octocat/Spoon-Knife/pulls) as practice.
+After that, you can add another remote repo
 
-For some more information on how to fork a repository, [check out our guide, "Forking Projects""](http://guides.github.com/overviews/forking/). Thanks! :sparkling_heart:
+Now, let's start to fetch 
+
+git fetch origin
+after this we can create a branch to start our modification safely
+
+git checkout -b changes origin/master
+
+
